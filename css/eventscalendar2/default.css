@@ -1,0 +1,186 @@
+/* @override 
+	/assets/template/css/eventscalendar2/default.css */
+
+#Calendar .calendar {
+	font: normal 12px Tahoma;
+	width: 905px;
+	margin: auto;
+	border-spacing: 4 !important;
+	-webkit-border-radius: 4px !important;
+	-moz-border-radius: 4px !important;
+	border-radius: 4px !important;
+}
+#Calendar .date {
+	padding: 3px; 
+	width: 116px; 
+	height: 100px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	text-shadow: 0px 1px 1px #FFFFFF;
+	filter: dropshadow(color=#FFFFFF, offx=0, offy=1);
+	background: url(../../images/calendar/calendar_day_normal_bg.jpg) #f9f2d2;
+	border: 1px solid #d8caca;
+	-moz-box-shadow: 0 0 5px #d4d4d4;
+	-webkit-box-shadow: 0 0 5px #d4d4d4;
+	box-shadow: 0 0 5px #d4d4d4;
+	color: #005826;
+	font: bold 20px 'ReklameScriptRegularDEMORg';
+	position: relative;
+}
+#Calendar .date:hover {
+	background: url(../../images/calendar/calendar_day_normal_bg.jpg) #f9f2d2;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #2c803d;
+}
+#Calendar .noevent .date:hover {
+		}
+#Calendar .head {
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 0%, #dedede 50%, #cecece 51%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(50%,#dedede), color-stop(51%,#cecece), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* W3C */
+	border: 1px solid #999999;
+}
+#Calendar .month {
+	height: 30px; 
+	font-size: 1.8em;
+	padding-bottom:10px
+}
+#Calendar .dow {
+	font-weight: bold;
+}
+#Calendar .dow {
+	font-size: 1.3em;
+	padding: 20px;
+}
+#Calendar .workday,
+#Calendar .weekend {
+	text-align: right;
+}
+
+#Calendar .weekend {
+	
+}
+#Calendar .emptyday {}
+#Calendar .today .date {
+	border: 1px dashed #ae2828;
+	background-image: url(../../images/calendar/calendar_day_today_bg.gif);
+	color: #9c271d;
+}
+#Calendar .month,
+#Calendar .prev,
+#Calendar .next {
+	font-weight: bold;
+	cursor: pointer; 
+	text-shadow: 0px 1px 1px #FFFFFF;
+	filter: dropshadow(color=#FFFFFF, offx=0, offy=1);
+}
+
+#Calendar .month {
+	border: none !important;
+}
+#Calendar .prev {
+	padding: 5px;
+}
+#Calendar .next {
+	padding: 5px;
+}
+
+#Calendar .prev a, .next a {
+	padding: 3px 6px;
+	text-decoration: none;
+}
+#Calendar .prev a:hover, .next a:hover {
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #AAA;
+	padding: 2px 5px;
+}
+
+#Calendar .noevent .date {	
+	
+}
+#Calendar .isevent .date {
+	color: #060 !important; 
+	font-weight: bold; 
+	cursor: pointer; 
+ }
+#Calendar .event {
+	text-align: left;
+}
+#Calendar .event div {
+	text-align: left;
+	font-weight: normal;
+}
+#Calendar .event div .num {
+	font-weight: bold;
+	color: #333;
+}
+#Calendar .event div .eventdate {
+	color: #333; 
+}
+
+#Calendar .cover {
+	opacity: 0.1;
+	position: relative;
+	background: #fff;
+	display: none;
+	margin: auto;
+	outline: 1px solid green;
+}
+.day-Title {
+	width:116px;
+	display: block;
+	font-size: 18px;
+	padding-left: 3px;
+}
+.newsLink {
+	position: absolute;
+	bottom: 30px;
+	left: 12px;
+}
+.galleryLink {
+	position: absolute;
+	bottom: 3px;
+	right: 11px;
+}
+.galleryLink:hover {
+	bottom: 4px;
+}
+.newsLink:hover{
+	bottom: 32px
+}
+.calendarRightMenu {
+	width: 300px;
+	text-align: right;
+	float: right;
+width: 313px;
+text-align: right;
+position: absolute;
+right: 20px;
+top: 115px;
+}
+.calendarRightMenu a{
+	width: 300px;
+	text-align: right;
+	padding: 13px;
+	background-color: green;
+	border: 1px solid white;
+	color: white;
+	text-decoration: none;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-box-shadow: 0 1px 3px rgba(0,250,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,250,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,250,0,0.25);
+    border-bottom: 1px solid rgba(0,2520,0,0.25);
+
+}
+#Calendar img {border:none!important}
